@@ -138,6 +138,24 @@ body {
   .modal_title {
     font-size: 50px !important;
   }
+
+  .contact_modal {
+    height: 100% !important;
+    width: 100% !important;
+  }
+
+  .modal_title {
+    margin-top: 5px !important;
+    font-size: 40px !important;
+  }
+
+  .input_modal {
+    margin-top: 40px !important;
+  }
+
+  #message {
+    height: 215px !important;
+  }
 }
 @media screen and (max-width: 1600px) {
   .info_photographer_title {
@@ -286,8 +304,11 @@ body {
 
 .btn_contact_text {
   margin: auto;
-  color: #FFFFFF;
   font-size: 20px;
+  color: white;
+}
+.btn_contact_text:hover {
+  color: #000000;
 }
 
 .info_photographer_profile {
@@ -633,6 +654,15 @@ label {
 
 .btn_mobile_contact {
   cursor: pointer;
+}
+
+#opener_popularity {
+  color: #DB8876;
+}
+
+.btn_contact:hover {
+  background-color: #DB8876;
+  color: #000000 !important;
 }
 
 .lb-loader, .lightbox {

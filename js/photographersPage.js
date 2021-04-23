@@ -49,6 +49,10 @@ fetch("./data.json")
                 const sortbypopularity = document.querySelector('.sort_by_button_text');
                 const sortPopularity = document.getElementById('opener_popularity')
 
+                const likes = document.querySelectorAll('.picture_heart');
+                const likesCount = document.querySelectorAll('.picture_fav_text');
+
+
 
                 //set loop for show all images of the Artist
 
@@ -185,8 +189,8 @@ fetch("./data.json")
                     }
 
                 })
+
+
             }
         }
     })
-
-

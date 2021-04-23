@@ -55,8 +55,12 @@
 
 .btn_contact_text{
   margin: auto;
-  color: #FFFFFF;
   font-size: 20px;
+  color: white;
+  &:hover{
+  color: #000000;
+
+  }
 }
 
 .info_photographer_profile{
@@ -412,4 +416,13 @@ label{
 
 .btn_mobile_contact{
   cursor: pointer;
+}
+
+#opener_popularity{
+  color: #DB8876;
+}
+
+.btn_contact:hover{
+  background-color: #DB8876;
+  color: #000000!important;
 }
