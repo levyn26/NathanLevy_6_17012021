@@ -340,7 +340,7 @@ body {
   background: #911C1C;
   border-radius: 0 0 5px 5px;
   width: 170px;
-  height: 109px;
+  height: 155px;
   margin-left: 106px;
   margin-top: -5px;
   display: none;
@@ -367,6 +367,10 @@ body {
   cursor: pointer;
 }
 
+#opener_popularity {
+  cursor: pointer;
+}
+
 .sort_by_opener_text {
   font-size: 18px;
   color: #FFFFFF;
@@ -388,8 +392,13 @@ body {
   transform: translateY(18px);
 }
 
-#opener_date {
+#opener_popularity {
   padding-top: 10px;
+  transform: translateY(6px);
+}
+
+#opener_date {
+  padding-top: 25px;
   transform: translateY(6px);
 }
 
