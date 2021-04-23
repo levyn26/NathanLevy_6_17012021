@@ -1,0 +1,166 @@
+@import "libs/reset.scss";
+@import "libs/font.scss";
+@import "libs/responsive.scss";
+@import "pages/photographer-page.scss";
+@import "libs/lightbox.min.scss";
+
+
+
+//header
+
+header{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: flex-start;
+  height: 125px;
+}
+
+.header_logo{
+  flex: 35 1 auto;
+  align-self: center;
+}
+
+.navigation{
+  flex: 35 1 auto;
+  align-self: center;
+}
+
+.header_photographer{
+  align-self: center;
+}
+
+.logo{
+  width: 200px;
+}
+
+.nav{
+  display: flex;
+}
+
+.nav li {
+  cursor: pointer;
+}
+
+.nav_item{
+  margin: 0 5px;
+}
+
+.nav_link_link{
+  color: #911C1C;
+  border: 0.5px solid #C4C4C4;
+  box-sizing: border-box;
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.photographer_text{
+  font-size: 36px;
+  color: #911C1C;
+  font-weight: 300;
+  text-align: center;
+}
+
+.filter{
+  display: none;
+  flex: 35 1 auto;
+  align-self: center;
+}
+
+.filter_container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.filter_item{
+  margin: 0 5px;
+}
+
+
+.filter_link_link{
+  color: #911C1C;
+  border: 0.5px solid #C4C4C4;
+  box-sizing: border-box;
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+// Section
+
+#photographer{
+  margin: 50px;
+}
+
+.photographer_container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 60px 205px;
+}
+
+.photographer_profil{
+  text-align: center;
+}
+
+.photographer_profil_image{
+  filter: drop-shadow(0px 3px 20px rgba(0, 0, 0, 0.28));
+}
+
+.photographer_profil_image_img{
+  width: 200px;
+  height: 200px;
+  background: #C4C4C4;
+  clip-path:ellipse(50% 50%);
+  object-fit: cover;
+}
+
+.photographer_profil_name{
+  font-size: 36px;
+  color: #D3573C;
+  text-align: center;
+}
+
+.photographer_profil_city{
+  text-align: center;
+  font-size: 13px;
+  color: #901C1C;
+}
+
+.photographer_profil_desc{
+  margin: 5px 0;
+  font-size: 10px;
+  text-align: center;
+  color: #000000;
+}
+
+.photographer_profil_price{
+  margin-bottom: 10px;
+  font-size: 9px;
+  text-align: center;
+  color: #757575;
+}
+
+
+.photographer_profil_filter_container{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.filter_item{
+  margin: 0 3px;
+}
+
+.filter_item_item{
+  color: #911C1C;
+  border: 0.5px solid #C4C4C4;
+  box-sizing: border-box;
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-size: 12px;
+}

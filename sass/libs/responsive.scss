@@ -1,0 +1,60 @@
+//Size for desktop
+$Desktop : 1500px;
+//Size for tablet
+$Tablet : 1200px;
+//Size for mobile
+$Mobile : 800px;
+
+
+@media screen and (max-width: $Desktop) {
+  .photographer_container {
+    gap: 60px 50px!important;
+  }
+  .navigation{
+    display: none;
+  }
+  .filter{
+    display: block!important;
+  }
+}
+
+@media screen and (max-width: $Tablet) {
+  .photographer_container {
+    grid-template-columns: 1fr 1fr!important;
+    grid-template-rows: 1fr 1fr 1fr!important;
+  }
+  .navigation{
+    display: none;
+  }
+  body {
+    margin: 0 50px!important;
+  }
+}
+
+@media screen and (max-width: $Mobile) {
+  .photographer_container {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr !important;
+  }
+  .navigation{
+    display: none;
+  }
+  .photographer_text{
+    font-size: 14px!important;
+  }
+  .logo{
+    width: 150px!important;
+  }
+  body {
+    margin: 0 30px!important;
+  }
+  .filter_style_margin{
+    margin-top: 12px!important;
+  }
+  input{
+    width: 450px!important;
+  }
+  .modal_title{
+    font-size: 50px !important;
+  }
+}
