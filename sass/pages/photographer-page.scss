@@ -1,0 +1,415 @@
+@import "responsive-photographer-page";
+
+
+//section
+
+.info_photographer{
+  height: 313px;
+  background: #FAFAFA;
+  border-radius: 5px;
+  padding: 55px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.info_photographer_title{
+  font-size: 58px;
+  color: #D3573C;
+  font-weight: 300;
+}
+
+.info_photographer_city{
+  color: #901C1C;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.info_photographer_desc{
+  color: #525252;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.info_photographer_filter{
+  display: flex;
+  margin-top: 24px;
+}
+
+.photographer_profil_tags_container{
+  display: flex;
+  margin-top: 15px;
+  align-content: center;
+}
+
+.btn_contact{
+  background: #911C1C;
+  border-radius: 5px;
+  width: 170px;
+  height: 69px;
+  display: flex;
+  &:hover{
+    opacity: 0.9;
+  }
+}
+
+.btn_contact_text{
+  margin: auto;
+  color: #FFFFFF;
+  font-size: 20px;
+}
+
+.info_photographer_profile{
+  text-align: end;
+}
+
+
+.info_photographer_profile_img{
+  clip-path:ellipse(50% 50%);
+  width: 200px;
+  height: 200px;
+  background: #C4C4C4;
+  object-fit: cover;
+}
+
+//sort button
+
+.sort_by{
+  margin-top: 30px;
+  display: flex;
+}
+
+.sort_by_text{
+  color: #000000;
+  font-size: 18px;
+  margin-top: 18px;
+  margin-right: 42px;
+}
+
+.sort_by_button{
+  display: flex;
+  width: 170px;
+  height: 61px;
+  background: #911C1C;
+  border-radius: 5px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.sort_by_button_text{
+  font-size: 18px;
+  color: #FFFFFF;
+  margin: auto;
+}
+
+.chevron-up{
+  color: white;
+  margin: auto;
+  transform: rotate(180deg);
+  transition: .2s ease-out;
+}
+
+.sort_by_opener{
+  background: #911C1C;
+  border-radius: 0 0 5px 5px;
+  width : 170px;
+  height: 155px;
+  margin-left: 106px;
+  margin-top: -5px;
+  display: none;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  animation: fade-in-top;
+  position: absolute;
+}
+
+.show{
+  display: block;
+  filter: none;
+}
+
+.rotate{
+  transition: .2s ease-out;
+  transform: rotate(0);
+}
+
+#opener_date{
+  cursor: pointer;
+}
+
+#opener_title{
+  cursor: pointer;
+}
+
+#opener_popularity{
+  cursor: pointer;
+}
+
+.sort_by_opener_text{
+  font-size: 18px;
+  color: #FFFFFF;
+  margin-left: 15px;
+}
+
+.line{
+  width: 148px;
+  height: 1px;
+  background: white;
+  margin: auto;
+}
+
+#line_1{
+  transform: translateY(3px);
+}
+
+#line_2{
+  transform: translateY(18px);
+}
+
+#opener_popularity{
+  padding-top: 10px;
+  transform: translateY(6px);
+}
+
+#opener_date{
+  padding-top: 25px;
+  transform: translateY(6px);
+}
+
+#opener_title{
+  padding-top: 25px;
+  transform: translateY(6px);
+}
+
+
+
+//picture media style
+
+.picture-grid{
+  margin: 40px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0 80px;
+}
+
+
+.picture{
+  height: 351px;
+  margin-bottom: 20px;
+}
+
+.picture_img{
+  width: fit-content;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.picture_container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.picture_container2{
+  display: flex;
+}
+
+.picture_title{
+  font-size: 22px;
+  color: #911C1C;
+}
+
+.picture_price{
+  font-size: 20px;
+  text-align: right;
+  color: #911C1C;
+  margin-right: 15px;
+}
+
+.picture_fav{
+  display: flex;
+}
+
+.picture_fav_text{
+  font-size: 20px;
+  text-align: right;
+  color: #911C1C;
+}
+
+.picture_heart{
+  align-items: flex-end;
+  display: flex;
+  margin: auto;
+  margin-left: 5px;
+}
+
+.menu_fixed{
+  width: 376px;
+  height: 89px;
+  background: #DB8876;
+  border-radius: 5px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.menu_fixed_container{
+  display: flex;
+}
+
+.menu_fixed_likes{
+  display: flex;
+  margin: auto;
+}
+
+.menu_fixed_likes_text{
+  font-size: 24px;
+  color: #000000;
+}
+
+.menu_fixed_likes_heart{
+  margin: auto;
+  margin-left: 10px;
+}
+
+.menu_fixed_price{
+  margin: auto;
+  font-size: 24px;
+  color: #000000;
+}
+
+.margin_top{
+  margin-top: 25px;
+}
+
+.btn_mobile_contact{
+  display: none;
+  background: #911C1C;
+  border-radius: 5px;
+  width: 170px;
+  height: 35px;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn_mobile_contact_text{
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  margin-top: 5px;
+  }
+
+  // contact modal
+
+.modal{
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background: rgba(196, 196, 196, 0.4);
+  display: none;
+}
+
+.contact_modal{
+  background: #DB8876;
+  border-radius: 5px;
+  position: fixed;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px 40px;
+  filter: drop-shadow(-5px 10px 30px rgba(0, 0, 0, 0.25));
+}
+
+.header_modal{
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact_title{
+  margin-top: -20px;
+}
+
+.modal_title{
+  font-size: 64px;
+  color: #000000;
+  &:nth-child(2){
+    margin-top: -10px;
+  }
+}
+
+.input_modal{
+  margin-top: 10px;
+}
+
+input{
+  background: #FFFFFF;
+  border-radius: 5px;
+  width: 599px;
+  height: 50px;
+}
+
+#message{
+  height: 140px!important;
+}
+
+label{
+  font-size: 36px;
+  color: #312E2E;
+}
+
+#btn_modal_submit{
+  border-radius: 5px;
+  width: 170px;
+  height: 69px;
+  font-size: 18px;
+}
+
+.closemodal_icon{
+  cursor: pointer;
+}
+
+#btn_modal_submit {
+  display: inline-block;
+  border: none;
+  padding: 1rem 2rem;
+  margin: 0;
+  text-decoration: none;
+  background: #911C1C;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 1rem;
+  line-height: 1;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+#btn_modal_submit:hover,
+#btn_modal_submit:focus {
+  background: #661414;
+}
+
+#btn_modal_submit:focus {
+  outline: 1px solid #fff;
+  outline-offset: -4px;
+}
+
+#btn_modal_submit:active {
+  transform: scale(0.99);
+}
+
+.btn_mobile_contact{
+  cursor: pointer;
+}

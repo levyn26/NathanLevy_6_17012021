@@ -1,0 +1,84 @@
+$Desktop : 1600px;
+$Tablet : 1200px;
+$Mobile : 800px;
+
+
+@media screen and (max-width: $Desktop) {
+  .info_photographer_title{
+    font-size: 45px!important;
+  }
+}
+
+@media screen and (max-width: $Tablet) {
+  body {
+    margin: 0 50px!important;
+  }
+  .picture-grid{
+    grid-template-columns: 1fr 1fr!important;
+    gap: 0 80px!important;
+  }
+  .info_photographer_title{
+    font-size: 45px!important;
+  }
+  .lightbox_img{
+    max-width: 60%!important;
+  }
+  .lightbox_arrow_left{
+    transform: translateX(-66vh)!important;
+  }
+}
+
+@media screen and (max-width: $Mobile) {
+  .logo{
+    width: 150px!important;
+  }
+  body {
+    margin: 0 30px!important;
+  }
+  .picture-grid{
+    grid-template-columns: 1fr!important;
+    gap: 0 15px;
+  }
+  .menu_fixed{
+    display: none;
+  }
+  .sort_by{
+    display: none!important;
+  }
+  .photographer_btn_contact{
+    display: none;
+  }
+  .info_photographer{
+    background: white!important;
+    padding: 0!important;
+    height: auto!important;
+    grid-template-columns: 1fr 1fr!important;
+  }
+  .info_photographer_title{
+    font-size: 36px!important;
+  }
+  .info_photographer_city{
+    font-size: 13px!important;
+  }
+  .info_photographer_desc{
+    font-size: 13px!important;
+  }
+  .mobile_filter{
+    font-size: 8px!important;
+  }
+  .info_photographer_profile_img{
+    width: 100px!important;
+    height: 100px!important;
+    max-width: none!important;
+    transform: translateX(-30px);
+  }
+  .btn_mobile_contact{
+    display: block!important;
+  }
+  .lightbox_img{
+    max-width: 60%!important;
+  }
+  .lightbox_arrow_left{
+    transform: translateX(-46vh)!important;
+  }
+}
