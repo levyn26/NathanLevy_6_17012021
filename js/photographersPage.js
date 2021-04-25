@@ -49,8 +49,6 @@ fetch("./data.json")
                 const sortbypopularity = document.querySelector('.sort_by_button_text');
                 const sortPopularity = document.getElementById('opener_popularity')
 
-                const likes = document.querySelectorAll('.picture_heart');
-                const likesCount = document.querySelectorAll('.picture_fav_text');
 
 
 
@@ -76,7 +74,6 @@ fetch("./data.json")
                     });
                 }
                 byPopularity();
-                console.log(arraySortPopularity);
 
 
                 //Function for sort by date
@@ -87,7 +84,6 @@ fetch("./data.json")
                     });
                 }
                 byDate();
-                console.log(arraySortDate);
 
 
 
@@ -102,7 +98,6 @@ fetch("./data.json")
                     });
                 }
                 byTitle();
-                console.log(arraySortTitle);
 
 
                 for (let imgArtist of arraySortPopularity) {
@@ -190,7 +185,38 @@ fetch("./data.json")
 
                 })
 
+                //Action
+
+                const likes = document.querySelectorAll('.picture_heart');
+                const likesCount = document.querySelectorAll('.picture_fav_text');
+                let likesValue = 0;
+                const totalLikesValue = document.querySelector('.menu_fixed_likes_text');
+
+
+                for (let i = 0; i < likes.length; i++) {
+
+                    likes[i].addEventListener("click", () => {
+                        
+                        console.log(likesCount[i].textContent++);
+                        totalLikesValue.textContent = somme(likesCount);
+                    
+                    });
+
+                }
+
+
 
             }
         }
     })
+
+
+
+const somme = (totalLikesValue) => {
+
+    let sum = 0;
+    for (let cur of totalLikesValue)
+        sum += parseInt(cur.textContent)
+    return sum
+
+}
