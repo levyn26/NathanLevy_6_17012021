@@ -733,7 +733,7 @@ body.lb-disable-scrolling {
   width: 32px;
   height: 32px;
   margin: 0 auto;
-  background: url(../assets/lightbox/loading.gif) no-repeat;
+  background: url(https://nexty6.com/wp-content/uploads/2021/04/loading.gif) no-repeat;
 }
 
 .lb-nav {
@@ -765,7 +765,7 @@ body.lb-disable-scrolling {
   transform: translateX(-50px);
   left: 0;
   float: left;
-  background: url(../assets/lightbox/left-arrow.svg) left 48% no-repeat;
+  background: url(https://nexty6.com/wp-content/uploads/2021/04/left-arrow.svg) left 48% no-repeat;
   filter: alpha(Opacity=0);
   -webkit-transition: opacity 0.6s;
   -moz-transition: opacity 0.6s;
@@ -783,7 +783,7 @@ body.lb-disable-scrolling {
   right: 0;
   float: right;
   transform: translateX(50px);
-  background: url(../assets/lightbox/right-arrow.svg) right 48% no-repeat;
+  background: url(https://nexty6.com/wp-content/uploads/2021/04/right-arrow.svg) right 48% no-repeat;
   filter: alpha(Opacity=0);
   -webkit-transition: opacity 0.6s;
   -moz-transition: opacity 0.6s;
@@ -846,7 +846,7 @@ body.lb-disable-scrolling {
   float: right;
   width: 50px;
   height: 50px;
-  background: url(../assets/lightbox/close.svg) top right no-repeat;
+  background: url(https://nexty6.com/wp-content/uploads/2021/04/close.svg) top right no-repeat;
   text-align: right;
   outline: 0;
   filter: alpha(Opacity=70);
