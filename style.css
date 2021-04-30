@@ -665,6 +665,11 @@ label {
   color: #000000 !important;
 }
 
+input {
+  font-size: 2vh;
+  padding-left: 1vh;
+}
+
 .lb-loader, .lightbox {
   text-align: center;
   line-height: 0;
